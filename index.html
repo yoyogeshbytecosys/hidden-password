@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="box">
+        <input type="password" placeholder="password" id="password">
+        <img id="eyeicon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EjY3zEgPaOSf3UKzX6PMWARsWGlldZkTUQ&s" alt="">
+    </div>
+
+
+    <script>
+        let eyeicon = document.getElementById("eyeicon")
+        password = document.getElementById("password")
+
+
+
+        eyeicon.onclick = function(){
+            if(password.type == "password"){
+                password.type = "text";
+                eyeicon.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Q0zOC5V7We9oQFLkc1nH5CSGmTALiQz4Cw&s"
+                
+                
+
+               
+                }else{
+                    password.type = "password"
+                    eyeicon.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EjY3zEgPaOSf3UKzX6PMWARsWGlldZkTUQ&s"
+                }
+            
+            }   
+            
+        
+    </script>
+    
+</body>
+</html>
